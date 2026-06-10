@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: coremedia-migration-lab
+  graphql:
+    graphiql:
+      enabled: true
+cors:
+  allowed-origin: http://localhost:5173

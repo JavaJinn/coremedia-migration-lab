@@ -1,0 +1,24 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #14213d; background: #f7f8fb; }
+body { margin: 0; }
+a { color: #1f6feb; text-decoration: none; font-weight: 700; }
+.topbar { display: flex; align-items: center; gap: 24px; padding: 18px 32px; background: white; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 5; }
+.brand { color: #14213d; font-size: 20px; }
+nav { display: flex; gap: 16px; flex: 1; }
+.badge { border-radius: 999px; padding: 6px 12px; background: #e5e7eb; }
+.badge-preview { background: #fff3bf; }
+.container { max-width: 1050px; margin: 0 auto; padding: 40px 24px; }
+.hero { min-height: 420px; display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; padding: 48px; background: white; }
+.hero img, .article img { width: 100%; border-radius: 24px; object-fit: cover; max-height: 420px; }
+.hero h1, .article h1 { font-size: clamp(36px, 6vw, 72px); line-height: 0.95; margin: 0; }
+.hero p, .lead { font-size: 21px; color: #4b5563; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: 12px !important; font-weight: 800; color: #1f6feb !important; }
+.card { max-width: 1050px; margin: 24px auto; background: white; border-radius: 24px; padding: 32px; box-shadow: 0 10px 30px rgba(15, 23, 42, .06); }
+.card h2 { margin-top: 0; font-size: 30px; }
+.article { background: white; margin-top: 32px; border-radius: 24px; }
+.richtext { font-size: 20px; line-height: 1.7; }
+.tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
+.tags span { background: #eef2ff; border-radius: 999px; padding: 8px 12px; }
+.report { background: white; border-radius: 24px; margin-top: 32px; }
+.stats { display: grid; grid-template-columns: auto 1fr; gap: 12px; font-size: 24px; }
+.error { color: #b91c1c; }
+@media (max-width: 800px) { .hero { grid-template-columns: 1fr; padding: 24px; } .topbar { flex-wrap: wrap; } }

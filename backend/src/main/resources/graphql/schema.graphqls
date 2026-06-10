@@ -1,0 +1,47 @@
+type Query {
+  pages: [Page!]!
+  pageByPath(path: String!, preview: Boolean = false): Page
+  articleById(id: ID!, preview: Boolean = false): Article
+  navigation: [NavigationItem!]!
+  migrationReport: MigrationReport!
+}
+
+type Page {
+  id: ID!
+  path: String!
+  title: String!
+  status: ContentStatus!
+  components: [PageComponent!]!
+}
+
+type PageComponent {
+  type: String!
+  headline: String!
+  text: String
+  articleId: ID
+  imageUrl: String
+}
+
+type Article {
+  id: ID!
+  title: String!
+  subtitle: String
+  body: String!
+  author: String!
+  status: ContentStatus!
+  imageUrl: String
+  tags: [String!]!
+}
+
+type NavigationItem {
+  label: String!
+  path: String!
+}
+
+type MigrationReport {
+  imported: Int!
+  skipped: Int!
+  warnings: [String!]!
+}
+
+enum ContentStatus { DRAFT PUBLISHED }
