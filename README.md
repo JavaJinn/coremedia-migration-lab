@@ -41,19 +41,19 @@ mvn spring-boot:run
 Backend läuft danach auf:
 
 ```text
-http://localhost:8080
+http://localhost:8081
 ```
 
 Health Check:
 
 ```text
-http://localhost:8080/api/health
+http://localhost:8081/api/health
 ```
 
 GraphiQL:
 
 ```text
-http://localhost:8080/graphiql
+http://localhost:8081/graphiql
 ```
 
 Beispiel-Query:
